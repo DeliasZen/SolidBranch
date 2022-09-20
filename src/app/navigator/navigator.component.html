@@ -1,0 +1,16 @@
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Acount</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let customer of selected">
+      <th>{{customer['name'].first}} {{customer['name'].last}}</th>
+      <td>{{customer['amount']}}</td>
+    </tr>
+  </tbody>
+
+</table>

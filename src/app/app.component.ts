@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SolidBranch';
+
+  types: string = 'income';
+
+
+  select(type: any) {
+    this.types = type;
+  }
 }
